@@ -11,17 +11,8 @@
     "rules": {
         "no-unused-vars": "off",
         "indent": "off",
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "never"
-        ]
+        "linebreak-style": ["error", "windows"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "never"]
     }
 }
