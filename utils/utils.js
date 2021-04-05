@@ -49,6 +49,8 @@ async function getNameHistory(username) {
         newPastNames.push(a)
     }
 
+    newPastNames.reverse()
+
     const account = new Account(uuid, currentName, newPastNames)
 
     return account
