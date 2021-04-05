@@ -74,7 +74,11 @@ class PreviousName {
      * @returns {String} formatted version of the date
      */
     getFormattedDate() {
-        return new Date(this.date).toUTCString()
+        const options = { year: "numeric", month: "short", day: "numeric" }
+        return new Intl.DateTimeFormat("en-US", options)
+            .format(this.date)
+            .split(",")
+            .join("")
     }
 
     /**
