@@ -91,6 +91,8 @@ class PreviousName {
         let response = format.replace("$username", this.username)
         if (this.date) {
             response = response.replace("$date", this.getFormattedDate())
+        } else {
+            response = response.replace("$date", "")
         }
 
         return response
