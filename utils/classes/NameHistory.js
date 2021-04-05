@@ -37,6 +37,22 @@ class PreviousName {
     getFormattedDate() {
         return new Date(this.date).toUTCString()
     }
+
+    /**
+     *
+     * @param {String} format format to use when converting to string default: "$username | $date"
+     * @returns {String}
+     */
+    toString(format) {
+        if (!format) {
+            format = "$username | $date"
+        }
+
+        let response = format.replace("$username", this.username)
+        response = response.replace("$date", this.getFormattedDate())
+
+        return response
+    }
 }
 
 exports.PreviousName = PreviousName
