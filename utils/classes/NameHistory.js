@@ -75,7 +75,7 @@ class PreviousName {
      */
     getFormattedDate() {
         const options = { year: "numeric", month: "short", day: "numeric" }
-        return new Intl.DateTimeFormat("en-US", options).format(this.date).split(",").join("")
+        return new Intl.DateTimeFormat("en-US", options).format(this.date).toLowerCase().split(",").join("")
     }
 
     /**
