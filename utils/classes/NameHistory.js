@@ -50,6 +50,7 @@ class PreviousName {
 
         let response = format.replace("$username", this.username)
         response = response.replace("$date", this.getFormattedDate())
+        }
 
         return response
     }
