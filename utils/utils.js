@@ -49,7 +49,7 @@ async function getNameHistory(username) {
 
     const account = new Account(uuid, currentName, newPastNames)
 
-    console.log(account)
+    return account
 }
 
 exports.getNameHistory = getNameHistory
