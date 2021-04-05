@@ -8,7 +8,7 @@ class Account {
     constructor(uuid, current, past) {
         this.uuid = uuid
         this.username = current
-        this.pastNames = past
+        this.history = past
         
         return this
     }
