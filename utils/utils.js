@@ -6,6 +6,8 @@ const fetch = require("node-fetch")
  * @param {String} username username of the user to get previous names for
  */
 async function getNameHistory(username) {
+    if (username.length > 16) return undefined
+    
     let res = await fetch("https://mc-heads.net/minecraft/profile/" + username).then((url) => {
         return url.json()
     })
