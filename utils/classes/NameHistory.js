@@ -96,7 +96,7 @@ class PreviousName {
         if (this.date) {
             response = response.replace("$date", this.getFormattedDate())
         } else {
-            response = response.replace("$date", "")
+            response = response.replace("$date", "first name")
         }
 
         return response
