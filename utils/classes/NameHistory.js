@@ -9,7 +9,7 @@ class Account {
         this.uuid = uuid
         this.username = current
         this.history = past
-        
+
         return this
     }
 }
@@ -18,7 +18,7 @@ exports.Account = Account
 
 class PreviousName {
     /**
-     * 
+     *
      * @param {String} username the username that the account was changed to
      * @param {String} date the date that the username was changed
      * @returns {PreviousName}
@@ -31,7 +31,7 @@ class PreviousName {
     }
 
     /**
-     * 
+     *
      * @returns {String} formatted version of the date
      */
     getFormattedDate() {

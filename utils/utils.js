@@ -15,9 +15,11 @@ async function getNameHistory(username) {
     let uuid
 
     if (res.error) {
-        res = await fetch("https://api.mojang.com/users/profiles/minecraft/" + username).then((url) => {
-            return url.json()
-        })
+        res = await fetch("https://api.mojang.com/users/profiles/minecraft/" + username).then(
+            (url) => {
+                return url.json()
+            }
+        )
 
         uuid = res.id
         currentName = res.name
