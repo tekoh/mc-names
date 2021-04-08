@@ -14,9 +14,15 @@ async function getNameHistory(username) {
         return cache.get(username.toLowerCase())
     }
 
+    let invalid = false
+
     let res = await fetch("https://mc-heads.net/minecraft/profile/" + username).then((url) => {
         return url.json()
+    }).catch(() => {
+        invalid = true
     })
+
+    if (invalid) return undefined
 
     let pastNames = []
     let currentName
@@ -38,7 +44,11 @@ async function getNameHistory(username) {
 
         res = await fetch(`https://api.mojang.com/user/profiles/${uuid}/names`).then((url) => {
             return url.json()
+        }).catch(() => {
+            invalid = true
         })
+
+        if (invalid) return undefined
 
         pastNames = res
     } else {
