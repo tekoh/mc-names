@@ -4,7 +4,7 @@ const fetch = require("node-fetch")
 const cache = new Map()
 
 /**
- * @returns {Account}
+ * @returns {Promise<Account>}
  * @param {String} username username of the user to get previous names for
  */
 async function getNameHistory(username) {
