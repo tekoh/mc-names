@@ -8,12 +8,19 @@ const fetch = require("node-fetch")
 async function getUUID(username) {
     const uuidURL = "https://api.mojang.com/users/profiles/minecraft/" + username
 
-    const uuid = await fetch(uuidURL).then((uuid) => uuid.json())
+    let res
 
-    if (!uuid.id) {
+    try {
+        res = await fetch(uuidURL).then((uuid) => uuid.json())  
+    } catch {
+        return undefined
+    }
+    
+
+    if (!res.id) {
         return undefined
     } else {
-        return uuid.id
+        return res.id
     }
 }
 
