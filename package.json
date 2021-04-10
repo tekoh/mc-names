@@ -1,7 +1,7 @@
 {
     "name": "mc-names",
     "version": "1.1.1",
-    "description": "",
+    "description": "easy access to minecraft name history",
     "main": "index.js",
     "scripts": {
         "format": "prettier --write ."
@@ -10,6 +10,7 @@
         "type": "git",
         "url": "git+https://github.com/tekoh/mc-names.git"
     },
+    "keywords": ["minecraft", "names", "name history", "minecraft skins", "minecraft name history"],
     "author": "tekoh",
     "license": "MIT",
     "bugs": {
