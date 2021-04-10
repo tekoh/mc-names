@@ -1,7 +1,7 @@
-const { fetch } = require("node-fetch")
+const fetch = require("node-fetch")
 
 /**
- * 
+ *
  * @param {String} username username of user
  * @returns {String} minecraft UUID
  */
