@@ -16,11 +16,13 @@ async function getNameHistory(username) {
 
     let invalid = false
 
-    let res = await fetch("https://mc-heads.net/minecraft/profile/" + username).then((url) => {
-        return url.json()
-    }).catch(() => {
-        invalid = true
-    })
+    let res = await fetch("https://mc-heads.net/minecraft/profile/" + username)
+        .then((url) => {
+            return url.json()
+        })
+        .catch(() => {
+            invalid = true
+        })
 
     if (invalid) return undefined
 
@@ -42,11 +44,13 @@ async function getNameHistory(username) {
             return undefined
         }
 
-        res = await fetch(`https://api.mojang.com/user/profiles/${uuid}/names`).then((url) => {
-            return url.json()
-        }).catch(() => {
-            invalid = true
-        })
+        res = await fetch(`https://api.mojang.com/user/profiles/${uuid}/names`)
+            .then((url) => {
+                return url.json()
+            })
+            .catch(() => {
+                invalid = true
+            })
 
         if (invalid) return undefined
 
