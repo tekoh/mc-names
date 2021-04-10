@@ -11,11 +11,10 @@ async function getUUID(username) {
     let res
 
     try {
-        res = await fetch(uuidURL).then((uuid) => uuid.json())  
+        res = await fetch(uuidURL).then((uuid) => uuid.json())
     } catch {
         return undefined
     }
-    
 
     if (!res.id) {
         return undefined

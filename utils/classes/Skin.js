@@ -1,6 +1,6 @@
 class Skin {
     /**
-     * 
+     *
      * @param {String} head head texture of the given user
      * @param {String} full full body texture
      * @param {String} download skin in form to upload to minecraft.net
