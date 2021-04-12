@@ -1,8 +1,31 @@
-const { Account } = require("./utils/classes/NameHistory")
-const { getNameHistory } = require("./utils/names")
-const { getSkin } = require("./utils/skins")
-const { getUUID } = require("./utils/utils")
+const names = require("./utils/names")
+const skins = require("./utils/skins")
+const fetch = require("node-fetch")
 
-exports.getNameHistory = getNameHistory
+exports.getNameHistory = names
+exports.getSkin = skins
+
+/**
+ *
+ * @param {String} username username of user
+ * @returns {String} minecraft UUID
+ */
+async function getUUID(username) {
+    const uuidURL = "https://api.mojang.com/users/profiles/minecraft/" + username
+
+    let res
+
+    try {
+        res = await fetch(uuidURL).then((uuid) => uuid.json())
+    } catch {
+        return undefined
+    }
+
+    if (!res.id) {
+        return undefined
+    } else {
+        return res.id
+    }
+}
+
 exports.getUUID = getUUID
-exports.getSkin = getSkin

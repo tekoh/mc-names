@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 const { Skin } = require("./classes/Skin")
-const { getUUID } = require("./utils")
+const { getUUID } = require("../index")
 
 /**
  * @returns {Promise<Skin>}
@@ -36,4 +36,4 @@ async function getSkin(username) {
     return new Skin(head, full, download, render, headRender, optifineCape, mojangCape)
 }
 
-exports.getSkin = getSkin
+module.exports = getSkin

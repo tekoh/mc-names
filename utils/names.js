@@ -82,4 +82,4 @@ async function getNameHistory(username) {
     return account
 }
 
-exports.getNameHistory = getNameHistory
+module.exports = getNameHistory
