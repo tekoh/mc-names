@@ -1,6 +1,6 @@
 {
     "name": "mc-names",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "description": "easy access to minecraft name history",
     "main": "index.js",
     "scripts": {
