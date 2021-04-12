@@ -1,1 +1,11 @@
 test/
+.github/
+.eslintignore
+.eslintrc.json
+.gitattributes
+.gitignore
+.prettierignore
+.prettierrc.json
+*.md
+LICENSE
+node_modules/
