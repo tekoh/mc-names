@@ -9,8 +9,6 @@
 
 ![image of basic usage](https://i.imgur.com/PSYRqQ4.png)
 
-[![Node.js CI](https://github.com/tekoh/mc-names/actions/workflows/node.js.yml/badge.svg)](https://github.com/tekoh/mc-names/actions/workflows/node.js.yml)
-
 <hr>
 
 ### name history
