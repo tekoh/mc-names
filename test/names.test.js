@@ -23,3 +23,15 @@ test("checks pages", async () => {
 
     expect(data.toPages().size).toBe(2)
 })
+
+test("checks invalid username", async () => {
+    const data = await getNameHistory("amdopiandouajdouahouhiou")
+
+    expect(data).toBe(undefined)
+})
+
+test("checks invalid username #2", async () => {
+    const data = await getNameHistory("$&%*!&")
+
+    expect(data).toBe(undefined)
+})
