@@ -5,6 +5,7 @@
   <a href="https://github.com/tekoh/mc-names/actions/workflows/codeql-analysis.yml"><img src="https://github.com/tekoh/mc-names/actions/workflows/codeql-analysis.yml/badge.svg"></a>
   <a href="https://github.com/tekoh/mc-names/actions/workflows/node.js.yml"><img src="https://github.com/tekoh/mc-names/actions/workflows/node.js.yml/badge.svg"></a>
   <a href="https://github.com/tekoh/mc-names/actions/workflows/ci.yml"><img src="https://github.com/tekoh/mc-names/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/tekoh/mc-names/actions/workflows/linting.yml"><img src="https://github.com/tekoh/mc-names/actions/workflows/linting.yml/badge.svg"></a>
 </p>
 
 ![image of basic usage](https://i.imgur.com/PSYRqQ4.png)
