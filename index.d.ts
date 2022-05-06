@@ -23,8 +23,8 @@ export class Account {
     public toPages(size?: number, format?: string): Map<number, string[]>
 }
 
-export async function getUUID(username: string): Promise<void | string>
+export function getUUID(username: string): Promise<void | string>
 
-export async function getSkin(username: string): Promise<Skin>
+export function getSkin(username: string): Promise<Skin>
 
-export async function getNameHistory(username: string): Promise<void | Account>
+export function getNameHistory(username: string): Promise<void | Account>
