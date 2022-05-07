@@ -2,7 +2,7 @@ export interface Skin {
     head: string
     full: string
     download: string
-    render: render
+    render: string
     optifineCape: string
     mineconeCape: string
 }
